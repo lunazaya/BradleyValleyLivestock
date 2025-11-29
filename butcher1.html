@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>The Butcher Shop</title>
+ <link rel="stylesheet" href="style.css">
+ <script src="cart.js"></script>
+</head>
+<body class="butcher-page">
+<h1>The Butcher Shop</h1>
+
+<p>Whole pig – Bulk order of A WHOLE PIG. This side of pork is custom butchered for you by our butcher. A cut sheet will be sent to you prior to butchering for you to choose your cuts. Cost for a side is $7/lb + butcher fee which is generally between $200-$250 ($1.25/lb and additional for sausage making and smoking) based on instructions. ESTIMATED WEIGHT PER PIG is 200 lbs HANG WEIGHT - however can range from 175- 225lbs. A $400 deposit is taken at the time for a pork share to confirm order. This will be deducted from the final amount owing. Estimated space requirement for a side of pork is 7-8 cubic feet. Pork is packed in butcher paper, labelled and frozen at the butcher.</p>
+
+<p>Half pig - Bulk order of HALF/SIDE of pork. This side of pork is custom butchered for you by our butcher. A cut sheet will be sent to you prior to butchering for you to choose your cuts. Cost for a side is $7/lb + butcher fee which is generally between $200-$250 ($1.25/lb and additional for sausage making and smoking) based on instructions. ESTIMATED WEIGHT PER SIDE is 125 lbs HANG WEIGHT - however can range from 90-150 lbs. A $200 deposit is taken at the time for a pork share to confirm order. This will be deducted from the final amount owing. Estimated space requirement for a side of pork is 3.5- 4 cubic feet. Pork is packed in butcher paper, labelled and frozen at the butcher</p>
+
+<h2>Pork</h2>
+<ul class="product-list two-grid">
+  <li><h3>Whole Pig <span class="price">$7/lb + $200–$250 butcher fee</span></h3> Approx 200 lbs hang weight. $400 deposit.
+    <button onClick="addToCart('Whole Pig', 400.00)">Add Deposit To Cart</button>
+  </li>
+  <li><h3>Half Pig <span class="price">$7/lb + $200–$250 butcher fee</span></h3>  Approx 125 lbs hang weight. $200 deposit.
+    <button onClick="addToCart('Half Pig', 200.00)">Add Deposit To Cart</button>
+  </li> 
+  <li>
+    <h3>Chorizo Sausage <span class="price">$15/lb</span></h3>
+    <button onClick="addToCart('Chorizo Sausage', 15.00)">Add To Cart</button>
+  </li>
+  <li>
+    <h3>Mild Italian <span class="price">$15/lb</span></h3>
+    <button onClick="addToCart('Mild Italian', 15.00)">Add To Cart</button>
+  </li>
+  <li>
+    <h3>Farmers Sausage <span class="price">$15/lb</span></h3>
+    <button onClick="addToCart('Farmers Sausage', 15.00)">Add To Cart</button>
+  </li>
+  <li>
+    <h3>Smoked <span class="price">+$1/lb</span></h3>
+    <button onClick="addToCart('Smoked Sausage', 15.00)">Add To Cart</button>
+  </li>
+  <li><h3>Ground Pork (Bulk 10lbs) <span class="price">$110</span></h3>
+    <button onClick="addToCart('Ground Pork', 110.00)">Add To Cart</button>
+  </li>
+  <li><h3>Ground Pork <span class="price">$12/lb</span></h3>
+    <button onClick="addToCart('Ground Pork', 12.00)">Add To Cart</button>
+  </li>
+  <li><h3>Bone-in Chops (2/pkg) <span class="price">$14/lb</span></h3>
+    <button onClick="addToCart('Bone-in Chops', 14.00)">Add To Cart</button>
+  </li>
+  <li><h3>Back Bacon <span class="price">$17/lb</span></h3>
+    <button onClick="addToCart('Back Bacon', 17.00)">Add To Cart</button>
+  </li>
+  <li><h3>Smoked Bacon <span class="price">$18/lb</span></h3>
+    <button onClick="addToCart('Smoked Bacon', 18.00)">Add To Cart</button>
+  </li>
+  <li><h3>Shoulder Steak <span class="price">$7/lb</span></h3> Great for the grill with excellent marbling.
+    <button onClick="addToCart('Shoulder Steak', 7.00)">Add To Cart</button>
+  </li>
+  <li><h3>Smoked Ham Hock <span class="price">$9.50/lb</span></h3> Perfect for soups and casseroles.
+    <button onClick="addToCart('Smoked Ham Hock', 9.50)">Add To Cart</button>
+  </li>
+  <li><h3>Shoulder Roast <span class="price">$14/lb</span></h3> Excellent for pulled pork.
+    <button onClick="addToCart('Shoulder Roast', 14.00)">Add To Cart</button>
+  </li>
+  <li><h3>Spare Ribs (2 racks/pkg) <span class="price">$14/lb</span></h3> Great for grilling or slow cooking.
+    <button onClick="addToCart('Spare Ribs', 14.00)">Add To Cart</button>
+  </li>
+  <li><h3>Loin Roast <span class="price">$16/lb</span></h3>
+    <button onClick="addToCart('Loin Roast', 16.00)">Add To Cart</button>
+  </li>
+  <li><h3>Back Ribs (2 racks/pkg) <span class="price">$17/lb</span></h3>
+    <button onClick="addToCart('Back Ribs', 17.00)">Add To Cart</button>
+  </li>
+</ul>
+
+<h2>Chicken (Whole)</h2>
+<ul>
+  <li><h3>Large Chicken(5.5lbs+) <span class="price">$6.25/lb</span></h3>
+    <button onClick="addToCart('Large Chicken', 6.25)">Add To Cart</button>
+  </li>
+  <li><h3>Medium Chicken(4-5lbs) <span class="price">$6.25/lb</span></h3>
+    <button onClick="addToCart('Medium Chicken', 6.25)">Add To Cart</button>
+  </li>
+  <li><h3>Small Chicken(4lbs) <span class="price">$6.25/lb</span></h3>
+    <button onClick="addToCart('Small Chicken', 6.25)">Add To Cart</button>
+  </li>
+</ul>
+
+<h2>Eggs</h2>
+<ul>
+  <li><h3><span class="price">$6/dozen</span></h3>
+    <button onClick="addToCart('Eggs', 6.00)">Add To Cart</button>
+  </li>
+</ul>
+
+<h2>Laying Hens</h2>
+<ul>
+  <li><h3>Adult <span class="price">$22/bird - POL</span></h3>
+    <button onClick="addToCart('Adult Hen', 22.00)">Add To Cart</button>
+  </li>
+  <li><h3>Chick (unsexed) <span class="price">$7</span></h3>
+    <button onClick="addToCart('Chick', 7.00)">Add To Cart</button>
+  </li>
+  <li><h3>Rooster <span class="price">$5</span></h3>
+    <button onClick="addToCart('Rooster', 5.00)">Add To Cart</button>
+  </li>
+</ul>
+
+<h2>Turkey (Whole)</h2>
+<ul>
+  <li><h3>Turkey<span class="price">$7/lb</span></h3>
+    <button onClick="addToCart('Turkey', 7.00)">Add To Cart</button>
+  </li>
+</ul>
+
+<h2>Guinea Fowl (Whole)</h2>
+<ul>
+  <li><h3>Guinea Fowl<span class="price">$6.50/lb</span></h3>
+    <button onClick="addToCart('Guinea Fowl', 6.50)">Add To Cart</button>
+  </li>
+</ul>
+
+<h2>Beef</h2>
+<ul class="product-list two-grid">
+  <li><h3>Wagyu/Angus (Grass Fed-Grass Finished): Whole <span class="price">$6/lb</span></h3>
+    <button onClick="addToCart('Wagyu/Angus Grass Finished', 6.00)">Add To Cart</button>
+  </li>
+  <li><h3>Wagyu/Angus (Grass Fed-Grass Finished): Half <span class="price">$6.25/lb</span></h3>
+    <button onClick="addToCart('Half Wagyu/Angus Grass Finished', 6.25)">Add To Cart</button>
+  </li>
+  <li><h3>Wagyu/Angus (Grass Fed-Grain Finished): Whole <span class="price">$6/lb</span></h3>
+    <button onClick="addToCart('Wagyu/Angus Grain Finished', 6.00)">Add To Cart</button>
+  <li><h3>Wagyu/Angus (Grass Fed-Grain Finished):Half <span class="price">$6/lb</span></h3>
+    <button onClick="addToCart('Half Wagyu/Angus Grain Finished', 6.00)">Add To Cart</button>
+  </li>
+  <li><h3>Angus (Grass Fed-Grass Finished): Whole <span class="price">$5/lb</span></h3>
+    <button onClick="addToCart('Angus Grass Finished', 5.00)">Add To Cart</button>
+  <li><h3>Angus (Grass Fed-Grass Finished): Half <span class="price">$5.25/lb</span></h3>
+    <button onClick="addToCart('Half Angus Grass Finished', 5.25)">Add To Cart</button>
+  </li>
+  <li><h3>Angus (Grass Fed-Grain Finished): Whole <span class="price">$5/lb</span></h3>
+    <button onClick="addToCart('Angus Grain Finished', 5.00)">Add To Cart</button>
+  <li><h3>Angus (Grass Fed-Grain Finished): Half <span class="price">$5.25/lb</span></h3>
+    <button onClick="addToCart('Angus Grain Finished', 5.25)">Add To Cart</button>
+  </li>
+</ul>
+
+<button onclick="location.href='pantry1.html'">Back to Pantry</button>
+<button onclick="location.href='cart1.html'">Go To Cart</button>
+</body>
+</html>

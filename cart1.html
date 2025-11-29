@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pantry Picks</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="cart.js" defer></script>
+</head>
+<body class="cart-page" onload="displayCart()">
+  <h1> Pantry Picks </h1>
+
+  <!--Cart items-->
+  <section id="cart-items" aria-label="Cart Items"></section>
+
+  <!--Cart Totals-->
+  <section id="cart-total" aria-label="Cart Total"></section>
+
+  <div id="cart-items-list" aria-label="Cart Items List" style="margin-top:16px;">
+    <h3>Items In Cart</h3>
+    <ul id="cart-items-summary" style="list-style: none; padding-left: 0; margin: 0"></ul>
+  </div>
+
+  <!--Form for placing the order-->
+  <section id="order-form" aria-label="Place Order Form" style="margin-top:20px;">
+    <h2>Customer Details</h2>
+    <label for="customer-name">Name</label>
+    <input id="customer-name" type="text" placeholder="Your full name" />
+    <br />
+    <label for="customer-email">Email:</label>
+    <input id="customer-email" type="email" placeholder="you@example.com" />
+  </section>
+
+  <!--Actions-->
+  <div style="margin-top:12px;">
+    <button onclick="sendCartEmail()">Submit Order</button>
+    <button onclick="clearCart()">Clear Order</button>
+  </div>
+
+  <button onclick="location.href='pantry1.html'">Back to Pantry</button>
+</body>
+</html>

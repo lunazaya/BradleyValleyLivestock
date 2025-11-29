@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bradley Valley Livestock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="index-home">
+  <h1>Welcome</h1>
+  <h3>to Bradley Valley Livestock</h3>
+  <button id="enterButton">Enter the Pantry</button>
+
+  <script>
+    // Fade-in effect
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+
+    document.getElementById('enterButton').addEventListener('click', () => {
+      window.location.href = "pantry1.html";
+    });
+  </script>
+</body>
+</html>

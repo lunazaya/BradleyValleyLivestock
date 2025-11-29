@@ -1,0 +1,345 @@
+body {
+    background-color: #cc5500;  /* default background */
+    color: white;
+    font-family: 'Lucida Handwriting', cursive;
+    margin: 0;
+    padding: 40px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+html, body {
+    height: auto;
+    min-height: 100%;
+    overflow-y: auto;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+h3 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+   
+}
+
+/* Paragraphs */
+p {
+    max-width: 900px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Highlight strong text */
+strong {
+    color: #ffe5b4;  /* light peach */
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+
+/* Buttons (shared across pages) */
+button {
+    background-color: white;
+    color: #cc5500;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 24px;
+    font-size: 1em;
+    font-family: 'Lucida Handwriting', cursive;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+    background-color: #ffb380;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* -------------------- INDEX1 -------------------- */
+body.index-home {
+    background-image: url('images/boys.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Optional overlay for readability */
+body.index-home::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+/* Fade-in titles and buttons */
+body.index-home h1,
+body.index-home h3,
+body.index-home button {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+body.index-home.loaded h1 { opacity: 1; }
+body.index-home.loaded h3 { opacity: 1; transition-delay: 0.5s; }
+body.index-home.loaded button { opacity: 1; transition-delay: 1s; }
+
+h1.index-title { font-size: 3.5em; margin-bottom: 30px; }
+h3.index-subtitle { font-size: 2.5em; font-weight: normal; margin: 15px 0 30px; }
+button.index-enter { padding: 12px 28px; font-size: 1.2em; }
+
+/* -------------------- PANTRY PAGE (pantry1) -------------------- */
+body.pantry-page {
+    background-image: url('images/pig.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 2000px;
+   
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out 1s;
+}
+
+body.pantry-page.loaded h1,
+body.pantry-page.loaded .button-container {
+    opacity: 1;
+}
+
+/* -------------------- ABOUT1 -------------------- */
+body.about-page {
+    background-image: url('images/farm.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Lucida Handwriting', cursive;
+    line-height: 1.6;
+}
+
+body.about-page .content-wrapper {
+    background: rgba(0, 0, 0, 0.35);
+    color: white;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 15px;
+    text-align: justify;
+}
+
+body.about-page h1 { text-align: center; margin-bottom: 20px; }
+body.about-page h2 { margin-top: 40px; margin-bottom: 10px; }
+body.about-page strong { color: #ffe5b4; }
+body.about-page button {
+    background-color: white;
+    color: #cc5500;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 24px;
+    font-family: 'Lucida Handwriting', cursive;
+    cursor: pointer;
+    display: block;
+    margin: 40px auto 0 auto;
+    transition: all 0.5s ease-in-out;
+}
+body.about-page button:hover { background-color: #ffb380; color: white; transform: scale(1.05); }
+
+/* -------------------- BUTCHER -------------------- */
+body.butcher-page {
+    background-image: url('images/trees.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 0,
+  
+}
+
+/* Price styling */
+.price {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #ffe5b4;
+    margin-top: 2px;
+}
+/* -------------------- PRESERVES -------------------- */
+
+body.preserves-page {
+    background-image: url('images/jam.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 0,
+  
+}
+/* -------------------- BAKERY -------------------- */
+
+body.bakery-page {
+    background-image: url('images/bailey.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 0,
+  
+}
+
+/* -------------------- CART -------------------- */
+
+body.cart-page {
+    background-image: url('images/farm.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 0,
+}
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #ffb380;
+}
+
+.qty-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.qty-controls button {
+    width: 28px;
+    height: 28px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.qty-controls button:hover {
+    background: #ffe5b4;
+}
+
+.item-total {
+    font-weight: bold;
+}
+
+/* -------------------- MEDIA -------------------- */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    p, li {
+        font-size: 1em;
+        text-align: left;
+    }
+
+    button {
+        padding: 8px 20px;
+        font-size: 0.95em;
+    }
+
+    h1.index-title { font-size: 2.9em; }
+    h2.index-subtitle { font-size: 1.2em; }
+}
+
+@media (min-width: 900px) {
+  .product-list.two-grid {
+    gap: 8px;
+  }
+  product-list.two-grid > li {
+    padding: 8px 12px
+  }
+}
+
+.product-list.two-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.product-list.two-grid > li {
+  background: rgba(240, 240, 240, 0.75) #cc5500;
+  border: none;
+  padding: 12px;
+  text-align: center;
+}
